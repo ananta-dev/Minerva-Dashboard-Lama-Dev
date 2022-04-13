@@ -2,6 +2,9 @@
     width: 100%;
     height: 5rem;
     background-color: lightblue;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .topbarWrapper {
@@ -19,8 +22,17 @@
     cursor: pointer;
 }
 
+.topRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .topbarIconContainer {
     position: relative;
+    cursor: pointer;
+    margin-right: 1rem;
+    color: #555;
 }
 
 .topIconBadge {
@@ -29,10 +41,19 @@
     height: 1.5rem;
     background-color: red;
     color: white;
-    top: -0.5rem;
-    right: -0.5rem;
+    top: -0.3rem;
+    right: -0.2rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.topAvatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: 0% 70%;
 }
