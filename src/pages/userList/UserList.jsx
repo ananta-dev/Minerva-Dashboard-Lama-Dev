@@ -83,15 +83,23 @@ export default function UserList() {
     ];
 
     return (
-        <div className='userList'>
-            <DataGrid
-                sx={{ fontSize: 16 }}
-                rows={data}
-                disableSelectionOnClick
-                columns={columns}
-                pageSize={8}
-                checkboxSelection
-            />
+        <div className='userListContainer'>
+            <div className='newUserLinkWrapper'>
+                <Link to='/newUser'>
+                    <button className='userListAddButton'>New User</button>
+                </Link>
+            </div>
+            <div className='userList'>
+                <DataGrid
+                    autoHeight
+                    sx={{ fontSize: 16 }}
+                    rows={data}
+                    disableSelectionOnClick
+                    columns={columns}
+                    pageSize={8}
+                    checkboxSelection
+                />
+            </div>
         </div>
     );
 }

@@ -1,37 +1,39 @@
-.userListContainer {
+.productListContainer {
     flex: 4;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     gap: 3rem;
-}
-.userListAddButton {
-    width: 11rem;
-    border: none;
-    padding: 0.5rem;
-    background-color: teal;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    color: white;
-    font-size: 1.6rem;
     margin-top: 3rem;
 }
 
-.newUserLinkWrapper {
+.newProductLinkWrapper {
     display: flex;
     justify-content: flex-end;
 }
 
-/* .userList {
-    flex: 4;
-} */
+.productListAddButton {
+    width: 11rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-.userListUser {
+.productList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.productListItem {
     display: flex;
     align-items: center;
 }
 
-.userListImg {
+.productListImg {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -39,7 +41,7 @@
     margin-right: 10px;
 }
 
-.userListEdit {
+.productListEdit {
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
@@ -49,12 +51,7 @@
     margin-right: 20px;
 }
 
-.userListDelete {
+.productListDelete {
     color: red;
     cursor: pointer;
-}
-
-.gridHeader,
-.gridCell {
-    font-size: 1.6rem;
 }
